@@ -1,5 +1,5 @@
-name: 'Checking Android Dependencies'
-description: 'Checking the specified file for any newer versions'
+name: 'Kotlin Migration Monitor'
+description: 'Monitor the status of a project migrating from Java to Kotlin.'
 inputs:
   directory:
     description: 'The starting directory for the file search.'
