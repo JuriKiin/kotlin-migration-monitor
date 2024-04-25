@@ -1,0 +1,22 @@
+name: 'Checking Android Dependencies'
+description: 'Checking the specified file for any newer versions'
+inputs:
+  directory:
+    description: 'The starting directory for the file search.'
+    required: true
+  open-issue:
+    default: true
+    description: 'If newer versions are found, a new issue will be opened.'
+    required: false
+  github-token:
+    description: 'GitHub token'
+    required: true
+outputs:
+  java-files:
+    description: 'The list of remaining java classes.'
+runs:
+  using: 'node20'
+  main: 'index.js'
+branding:
+  icon: 'git-merge'
+  color: 'green'
